@@ -23,6 +23,7 @@ class FirstController extends CI_Controller
         'forWhat'=>"MEETFIT",);
         $query=$this->User_model->get();
         $data['userlist']=$query->result_array();
+       $this->load->helper('url');
         $this->load->view('index.html',$data);
     }
 }

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang=zh-CN>
+<head>
+    <title>MeetFit</title>
+    <meta charset=utf-8 >
+    <meta name="robots" content="index, follow" >
+    <meta name="keywords" content="" >
+    <meta name="description" content="" >
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" sizes="32x32">
+    <!-- CSS begin -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
+    <link rel="stylesheet" type="text/css" href="css/skeleton.css" >
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css"  >
+    <link rel="stylesheet" href="css/colors/red.css" id="colors">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link href='//cdn.webfont.youziku.com/webfonts/nomal/93205/45837/5805eb36f629d808a8f8f676.css' rel='stylesheet' type='text/css' />
+    <link href='//cdn.webfont.youziku.com/webfonts/nomal/93205/45837/5805ef97f629d808a8f8f67c.css' rel='stylesheet' type='text/css' />
+    <link href='//cdn.webfont.youziku.com/webfonts/nomal/93205/45837/5805ef42f629d808a8f8f67b.css' rel='stylesheet' type='text/css' />
+    <!-- flexslider slider CSS -->
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css"  >
+    <!--end flexslider slider CSS -->
+
+
+    <!-- CSS end -->
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body class="red">
+<div id="wrap" class="boxed">
+    <div class="grey-bg">
+
+
+        <!--[if lte IE 7]>
+        <div id="ie-container">
+            <div id="ie-cont-close">
+                <a href='#' onclick='javascript&#058;this.parentNode.parentNode.style.display="none"; return false;'><img src='images/ie-warning-close.jpg' style='border: none;' alt='Close'></a>
+            </div>
+            <div id="ie-cont-content" >
+                <div id="ie-cont-warning">
+                    <img src='images/ie-warning.jpg' alt='Warning!'>
+                </div>
+                <div id="ie-cont-text" >
+                    <div id="ie-text-bold">
+                        You are using an outdated browser
+                    </div>
+                    <div id="ie-text">
+                        For a better experience using this site, please upgrade to a modern web browser.
+                    </div>
+                </div>
+                <div id="ie-cont-brows" >
+                    <a href='http://www.firefox.com' target='_blank'><img src='images/ie-warning-firefox.jpg' alt='Download Firefox'></a>
+                    <a href='http://www.opera.com/download/' target='_blank'><img src='images/ie-warning-opera.jpg' alt='Download Opera'></a>
+                    <a href='http://www.apple.com/safari/download/' target='_blank'><img src='images/ie-warning-safari.jpg' alt='Download Safari'></a>
+                    <a href='http://www.google.com/chrome' target='_blank'><img src='images/ie-warning-chrome.jpg' alt='Download Google Chrome'></a>
+                </div>
+            </div>
+        </div>
+        <![endif]-->
+
+        <!-- HEADER -->
+        <header id="header" >
+            <div class="container clearfix">
+                <div class="sixteen columns header-position">
+                    <div class="menu-wrap">
+                        <nav class="menu">
+                            <div class="header-menu-container right">
+                                <!-- TOP MENU -->
+                                <nav id="main-nav">
+                                    <ul class="sf-menu clearfix">
+                                        <li ><a href="index.html">首页</a>
+                                        </li>
+                                        <li class="current"><a href="statistic.html">运动</a>
+                                        </li>
+                                        <li><a href="activity.html">活动</a>
+                                        </li>
+                                        <li><a href="blog.html">社区</a>
+                                        </li>
+                                        <li ><a href="contact.html">联系我们</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </nav>
+                    </div>
+                    <button class="menu-button" id="open-button"></button>
+                </div>
+            </div>
+        </header>
+
+        <!-- PAGE TITLE -->
+        <div class="container m-bot-35 clearfix">
+            <div class="sixteen columns">
+                <div class="page-title-container clearfix">
+                    <h1 class="page-title"><a href="portfolio.html">用户名</a> <span class="sub-title">/ 活动</span></h1>
+                    <ul class="portfolio-pagination">
+                        <li>
+                            <a class="pag-prev" href="#"></a>
+                        </li>
+                        <li>
+                            <a class="pag-next" href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>	<!-- Grey bg end -->
+
+    <!-- CONTENT -->
+    <div class="container clearfix">
+        <!-- SIDEBAR -->
+        <div class="five columns ">
+            <!-- WIDGET -->
+            <div class="sidebar-item  m-bot-35">
+
+                <div class="caption-container-main m-bot-30">
+                    <div class="caption-text-container">用户信息</div>
+                    <div class="content-container-white caption-bg "></div>
+                </div>
+
+                <div class="content-container-white ">
+                    <div class="hover-item" style="height: 50%;width: 50%;">
+                        <div class="clearfix">
+
+                            <div class="view view-first">
+                                <img src="images/panda.PNG">
+                                <div class="mask"></div>
+                                <div class="abs">
+                                    <a href="images/panda.PNG"  class="lightbox zoom info"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-item-caption-container" style="padding-left: 1%">
+                            <a class="a-invert" href="#" >User Name</a> <i class="fa fa-map-marker" aria-hidden="true" style="padding-left: 5%"></i>Nanjing
+                        </div>
+                    </div>
+                    <p>世界变得友善并非只看脸，我认为世界也看到了你想要一个更好生活的诚意</p><i class="fa fa-pencil" aria-hidden="true"></i>
+                </div>
+            </div>
+            <!-- WIDGET -->
+            <div class="sidebar-item  m-bot-35">
+                <div class="caption-container-main m-bot-30">
+                    <div class="caption-text-container">活动</div>
+                    <div class="content-container-white caption-bg "></div>
+                </div>
+
+                <div class="content-container-white ">
+                    <ul class="portfolio-check-list check-icon">
+                        ><a href=""><li>南大软院彩色跑</li></a>
+                        ><a href=""><li>三爷自由骑行</li></a>
+                        ><a><li>身不由己之深蹲</li></a>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- WIDGET -->
+            <div class="sidebar-item  m-bot-35">
+                <div class="caption-container-main m-bot-30">
+                    <div class="caption-text-container">兴趣</div>
+                    <div class="content-container-white caption-bg "></div>
+                </div>
+
+
+                <div>
+
+                    <div class="tag-cloud">
+                        <ul class="clearfix">
+                            <li><a href="">跑步</a></li>
+                            <li><a href="">腹肌锻炼</a></li>
+                            <li><a href="">骑行</a></li>
+                            <li><a href="">腿部力量锻炼</a></li>
+                            <li><a href="">游泳</a></li>
+                            <li><a href="">足球</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <!-- WIDGET -->
+        </div>
+        <!-- 640*800 -->
+        <div class="eleven columns m-bot-25 grey-bg" style="height: 1300px" >
+            <!-- PORTFOLIO ITEM -->
+
+            <div class="row" style="width: 100%;height: 30%">
+                <blockquote>
+                    运动类型与消耗卡路里
+                </blockquote>
+            <div id="pie" style="width: 45%;height:80%;float: left"></div>
+                <div style="width: 45%;height: 80%; margin-left: 5%;float: right;margin-top: 15%">
+                <p>在各项运动消耗的卡路里</p>
+                    <h3>均衡</h3>
+                    <q>其中运动量最大的是<span class="bold">健身运动</span></q>
+                </div>
+
+            </div>
+
+            <div class="row" style="width: 100%;height: 30%">
+                <blockquote>
+                    和同伴的比较
+                </blockquote>
+                <div style="width: 45%;height: 80%; margin-left: 3%;margin-right:5%;float: left;margin-top: 15%">
+                    <p>在与您同伴的比较中</p>
+                    <h3>落后</h3>
+                    <q>其中运动量最大差距来自<span class="bold">健身运动</span></q>
+                </div>
+            <div id="com" style="width: 45%;height:80%; float: right"></div>
+            </div>
+
+            <div class="row" style="width: 100%;height: 30%">
+                <blockquote>
+                    运动能力评分
+                </blockquote>
+                <div id="rad" style="width: 45%;height:80%;float: left"></div>
+                <div style="width: 45%;height: 80%; margin-left: 5%;float: right;margin-top: 15%">
+                    <p>您最突出的属性为</p>
+                    <h3>科学锻炼</h3>
+                    <q>您的总评分高于<span class="bold">67.7％</span>的用户</q>
+                </div>
+            </div>
+            <blockquote>
+                更多
+            </blockquote>
+        </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- FOOTER -->
+<footer>
+    <div class="footer-content-bg">
+        <div class="container clearfix">
+            <div class="one-third-footer-spec column omega">
+
+                <div class="logo-footer-container">
+                    <a href="index.html" class="logo" rel="home" title="Home">
+                        <img src="images/mf-logo-retina.png" alt="solana" >
+                    </a>
+                </div>
+            </div>
+            <div class="two-thirds-footer-spec column alpha">
+
+
+                <p class="footer-content-container m-none">专业的运动<strong>社区</strong></p>
+
+            </div>
+        </div>
+        <div class="container clearfix">
+            <div class="one-third column">
+                <div class="footer-social-text-container">
+                    <p class="title-font-24">与我们<strong>联系</strong></p>
+                    <p class="title-font-12">倾听您的意见</p>
+                </div>
+                <div class="footer-social-links-container">
+                    <ul class="social-links clearfix">
+                        <li><a class="facebook-link" target="_blank" title="Facebook" href=""></a></li>
+                        <li><a class="skype-link" target="_blank" title="Skype" href=""></a></li>
+                        <li><a class="twitter-link" target="_blank" title="Twitter" href=""></a></li>
+                        <li><a class="linkedin-link" target="_blank" title="linkedin" href=""></a></li>
+                        <li><a class="googleplus-link" target="_blank" title="googleplus" href=""></a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="one-third column ">
+                <h3 class="caption footer-block">版本 <span class="bold">更新</span></h3>
+                <ul class="latest-post">
+                    <li class="standart-post">
+                        <h4 class="title-post-footer"><a href="blog-single.html">v1.0</a></h4>
+                        <h4 class="date-post-footer">July 10, 2016</h4>
+                    </li>
+                    <li class="image-post">
+                        <h4 class="title-post-footer"><a href="blog-single.html">v1.1</a></h4>
+                        <h4 class="date-post-footer">July 10, 2016</h4>
+                    </li>
+                    <li class="video-post">
+                        <h4 class="title-post-footer"><a href="blog-single.html">v1.2</a></h4>
+                        <h4 class="date-post-footer">July 10, 2016</h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="one-third column ">
+                <h3 class="caption footer-block">联系 <span class="bold">地址</span></h3>
+                <ul class="footer-contact-info">
+                    <li class="footer-loc">
+                        Fdo, 123 Some Ave, SFW 700,  Nanjing
+                    </li>
+                    <li class="footer-phone">
+                        (123) 456-7890<br>(123) 987-6540
+                    </li>
+                    <li class="footer-mail">
+                        <a href="">email@163.com</a><br>
+                        <a href="">email@outlook.com</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright-bg">
+        <div class="container ">
+            <div class="sixteen columns clearfix">
+                <div class="footer-menu-container">
+                    <nav class="clearfix" id="footer-nav">
+                        <ul class="footer-menu">
+                            <li><a href="index.html">首页</a></li>
+                            <li><a href="statistic.html">运动</a></li>
+                            <li><a href="activity.html">活动</a></li>
+                            <li><a href="blog.html">社区</a></li>
+                            <li><a href="contact.html">联系我们</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-copyright-container right-text">
+                    &copy; MEET<span class="red">FIT .</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<p id="back-top">
+    <a href="#top" title="Back to Top"><span></span></a>
+</p>
+</div><!-- End wrap -->
+<!-- JS begin -->
+<script src="js/echarts.min.js"></script>
+    <script src="js/charts.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/head.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="js/jQuery.BlackAndWhite.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/jflickrfeed.min.js"></script>
+<script type="text/javascript" src="js/jquery.quicksand.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/jquery-cookie.js"></script>
+<script src="js/styleswitcher.js"></script>
+
+<!-- JS end -->
+
+</body>
+</html>
