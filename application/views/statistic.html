@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang=zh-CN>
+<base href="<?php  echo base_url();?>"/>
 <head>
     <title>MeetFit</title>
     <meta charset=utf-8 >
@@ -63,6 +64,7 @@
         <![endif]-->
 
         <!-- HEADER -->
+<!-- HEADER -->
         <header id="header" >
             <div class="container clearfix">
                 <div class="sixteen columns header-position">
@@ -72,13 +74,13 @@
                                 <!-- TOP MENU -->
                                 <nav id="main-nav">
                                     <ul class="sf-menu clearfix">
-                                        <li ><a href="index.html">首页</a>
+                                        <li><a href="index.php/LoginController/index">首页</a>
                                         </li>
-                                        <li class="current"><a href="statistic.html">运动</a>
+                                        <li class="current"><a href="index.php/StatisticController/userStatistic">运动</a>
                                         </li>
-                                        <li><a href="activity.html">活动</a>
+                                        <li><a href="index.php/ActivityController/activity">活动</a>
                                         </li>
-                                        <li><a href="blog.html">社区</a>
+                                        <li><a href="index.php/BlogController/blog">社区</a>
                                         </li>
                                         <li ><a href="contact.html">联系我们</a></li>
                                     </ul>
@@ -95,15 +97,7 @@
         <div class="container m-bot-35 clearfix">
             <div class="sixteen columns">
                 <div class="page-title-container clearfix">
-                    <h1 class="page-title"><a href="portfolio.html">用户名</a> <span class="sub-title">/ 活动</span></h1>
-                    <ul class="portfolio-pagination">
-                        <li>
-                            <a class="pag-prev" href="#"></a>
-                        </li>
-                        <li>
-                            <a class="pag-next" href="#"></a>
-                        </li>
-                    </ul>
+                    <h1 class="page-title"><a href="index.php/StatisticController/userStatistic"><?=$_SESSION['username'];?></a> <span class="sub-title">/ 运动数据</span></h1>
                 </div>
             </div>
         </div>
@@ -135,11 +129,12 @@
                             </div>
                         </div>
                         <div class="blog-item-caption-container" style="padding-left: 1%">
-                            <a class="a-invert" href="#" >User Name</a> <i class="fa fa-map-marker" aria-hidden="true" style="padding-left: 5%"></i>Nanjing
+                            <a class="a-invert" href="#" ><?=$_SESSION['username'];?></a> <i class="fa fa-map-marker" aria-hidden="true" style="padding-left: 5%"></i>Nanjing
                         </div>
                     </div>
                     <p>世界变得友善并非只看脸，我认为世界也看到了你想要一个更好生活的诚意</p><i class="fa fa-pencil" aria-hidden="true"></i>
                 </div>
+                <a class="button small" href="index.php/UserController/userSetting"><i class="icon-cog"></i>用户设置</a>
             </div>
             <!-- WIDGET -->
             <div class="sidebar-item  m-bot-35">
@@ -150,9 +145,9 @@
 
                 <div class="content-container-white ">
                     <ul class="portfolio-check-list check-icon">
-                        ><a href=""><li>南大软院彩色跑</li></a>
-                        ><a href=""><li>三爷自由骑行</li></a>
-                        ><a><li>身不由己之深蹲</li></a>
+                    <?php foreach($myActivities as $item): ?>
+                        ><a href="index.php/ActivityController/activitySingle/<?=$item['activtiesId']?>"><li><?=$item['name'];?></li></a>
+                    <?php endforeach;?>
                     </ul>
                 </div>
 
@@ -312,11 +307,11 @@
                 <div class="footer-menu-container">
                     <nav class="clearfix" id="footer-nav">
                         <ul class="footer-menu">
-                            <li><a href="index.html">首页</a></li>
-                            <li><a href="statistic.html">运动</a></li>
-                            <li><a href="activity.html">活动</a></li>
-                            <li><a href="blog.html">社区</a></li>
-                            <li><a href="contact.html">联系我们</a></li>
+                            <li><a href="index.php/LoginController/index">首页</a></li>
+                                        <a href="index.php/StatisticController/userStatistic">运动</a>
+                                        <li><a href="index.php/ActivityController/activity">活动</a></li>
+                                        <li ><a href="index.php/BlogController/blog">社区</a></li>
+                                        <li ><a href="contact.html">联系我们</a></li>
                         </ul>
                     </nav>
                 </div>

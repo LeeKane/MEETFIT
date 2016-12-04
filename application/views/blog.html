@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang=zh-CN>
+<base href="<?php  echo base_url();?>"/>
 <head>
 	<title>MeetFit</title>
 	<meta charset=utf-8 >
@@ -69,13 +70,13 @@
 								<!-- TOP MENU -->
 								<nav id="main-nav">
 									<ul class="sf-menu clearfix">
-										<li ><a href="index.html">首页</a>
+										<li ><a href="index.php/LoginController/index">首页</a>
 										</li>
-										<li><a href="statistic.html">运动</a>
+										<li><a href="index.php/StatisticController/userStatistic">运动</a>
 										</li>
-										<li><a href="activity.html">活动</a>
+										<li><a href="index.php/ActivityController/activity">活动</a>
 										</li>
-										<li class="current"><a href="blog.html">社区</a>
+										<li class="current"><a href="index.php/BlogController/blog">社区</a>
 										</li>
 										<li ><a href="contact.html">联系我们</a></li>
 									</ul>
@@ -91,7 +92,7 @@
 	<div class="container m-bot-35 clearfix">
 		<div class="sixteen columns">
 			<div class="page-title-container clearfix">
-				<h1 class="page-title">社区</h1>
+				<h1 class="page-title"><a href="index.php/StatisticController/userStatistic"><?=$_SESSION['username'];?></a> <span class="sub-title">/ 社区</span></h1>
 			</div>	
 		</div>
 	</div>
@@ -106,8 +107,8 @@
 							<div class="clearfix">
 								<div class="blog-item-date-inf-container left">
 										<div class="blog-item-date-cont">
-											<div class="blog-item-date">21</div>
-											<div class="blog-item-mounth">OCT</div>
+											<div class="blog-item-date">3</div>
+											<div class="blog-item-mounth">DEC</div>
 										</div>
 										<div>
 											<div class="blog-item-category-img">
@@ -117,33 +118,33 @@
 								</div>
 								
 								<div class="view view-first">
-									<img src="images/content/post-2-1.jpg" alt="Ipsum" >
+									<img src="images/blog1.jpg" alt="Ipsum" >
 									<div class="mask"></div>	
 									<div class="abs">
-										<a href="images/content/post-2-1.jpg" class="lightbox zoom info"></a><a href="blog-single.html" class="link info"></a>
+										<a href="images/blog1.jpg" class="lightbox zoom info"></a><a href="blog-single.html" class="link info"></a>
 									</div>	
 								</div>
 							</div>	
 							<div class="blog-item-caption-container">
-										<a class="a-invert" href="blog-single.html" ><span class="bold">Craes</span> Nustro</a>
+										<a class="a-invert" href="blog-single.html" ><span class="bold">全世界此刻都是你的球迷！</span> ---悼念沙佩科恩斯空难</a>
 									<div class="lp-item-container-border clearfix">
 										<div class="blog-info-container">
 												<ul class="clearfix">
-													<li class="author">Admin</li>
+													<li class="author">artpark</li>
 													<li class="view">16 views</li>
 													<li class="comment">25 Comments</li>
-													<li class="tag">Website Design - Responsive</li>
+													<li class="tag">运动</li>
 												</ul>
 										</div>
 									</div>
 							</div>
 						</div>
 						<div class="blog-item-text-container">
-							<p>Luctus et ultrices posuere cubilia Curae. Donec nibh sapien, molestie quis elementum et, dignissim non ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sed mauris lorem. Sed sit amet mauris eu purus consectetur blandit sed et lacus. Cras tellus enim, sagittis a varius faucibus, molestie in dolor. Mauris mollis adipiscing elit, in vulputate est volutpat vitae. Donec nibh sapien, molestie quis elementum et, dignissim non ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec nibh sapien, molestie quis elementum et, dignissim non ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas...</p>
+							<p>哥伦比亚当地时间11月28日22:15，一架载有72名乘客与9名机组人员的LAMIA航空一架RJ85F飞机（航班号LMI2933）在飞往哥伦比亚麦德林国际机场途中坠毁。在坠机前，该航班曾经发出紧急救援信号。飞机上载的是巴西沙佩科恩斯足球俱乐部的队员，是一支巴甲球队。哥伦比亚当地媒体El Tiempo报纸称，飞机至少载有22名该队球员。。。。</p>
 
 						</div>
 						<div class="lp-r-m-container right">
-							<a href="blog-single.html" class="button medium r-m-plus r-m-full">READ MORE</a>
+							<a href="index.php/BlogController/blogSingle/1" class="button medium r-m-plus r-m-full">READ MORE</a>
 						</div>
 	
 			</div>
@@ -153,8 +154,8 @@
 							<div class="clearfix">
 								<div class="blog-item-date-inf-container left">
 										<div class="blog-item-date-cont">
-											<div class="blog-item-date">17</div>
-											<div class="blog-item-mounth">OCT</div>
+											<div class="blog-item-date">2</div>
+											<div class="blog-item-mounth">DEC</div>
 										</div>
 										<div>
 											<div class="blog-item-category-img">
@@ -164,33 +165,33 @@
 								</div>
 								
 								<div class="view view-first">
-									<img src="images/content/post-2-2.jpg" alt="Ipsum" >
+									<img src="images/blog2.jpg" alt="Ipsum" >
 									<div class="mask"></div>	
 									<div class="abs">
-										<a href="images/content/post-2-2.jpg" class="lightbox zoom info"></a><a href="blog-single.html" class="link info"></a>
+										<a href="images/blog2.jpg" class="lightbox zoom info"></a><a href="blog-single.html" class="link info"></a>
 									</div>	
 								</div>
 							</div>	
 							<div class="blog-item-caption-container">
-										<a class="a-invert" href="blog-single.html" ><span class="bold">Sed</span> Lectus</a>
+										<a class="a-invert" href="blog-single.html" ><span class="bold">我们不是生来如此，而是每天坚持不懈</span>
 									<div class="lp-item-container-border clearfix">
 										<div class="blog-info-container">
 												<ul class="clearfix">
-													<li class="author">Admin</li>
+													<li class="author">ddl</li>
 													<li class="view">16 views</li>
 													<li class="comment">25 Comments</li>
-													<li class="tag">Website Design - Responsive</li>
+													<li class="tag">健身</li>
 												</ul>
 										</div>
 									</div>
 							</div>
 						</div>
 						<div class="blog-item-text-container">
-							<p>Luctus et ultrices posuere cubilia Curae. Donec nibh sapien, molestie quis elementum et, dignissim non ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sed mauris lorem. Sed sit amet mauris eu purus consectetur blandit sed et lacus. Cras tellus enim, sagittis a varius faucibus, molestie in dolor. Mauris mollis adipiscing elit, in vulputate est volutpat vitae. Donec nibh sapien, molestie quis elementum et, dignissim non ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec nibh sapien, molestie quis elementum et, dignissim non ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas...</p>
+							<p>每一个优秀的人，都有一段沉默的时光。那一段时光，是付出了很多努力，忍受孤独和寂寞，不抱怨不诉苦，日后说起时，连自己都能被感动的日子。。。。</p>
 
 						</div>
 						<div class="lp-r-m-container right">
-							<a href="blog-single.html" class="button medium r-m-plus r-m-full">READ MORE</a>
+							<a href="index.php/BlogController/blogSingle/2" class="button medium r-m-plus r-m-full">READ MORE</a>
 						</div>
 	
 			</div>
@@ -200,8 +201,8 @@
 							<div class="clearfix">
 								<div class="blog-item-date-inf-container left">
 										<div class="blog-item-date-cont">
-											<div class="blog-item-date">10</div>
-											<div class="blog-item-mounth">OCT</div>
+											<div class="blog-item-date">1</div>
+											<div class="blog-item-mounth">DEC</div>
 										</div>
 										<div>
 											<div class="blog-item-category-img">
@@ -211,33 +212,43 @@
 								</div>
 								
 								<div class="view view-first">
-									<img src="images/content/post-2-3.jpg" alt="Ipsum" >
+									<img src="images/blog3.jpg" alt="Ipsum" >
 									<div class="mask"></div>	
 									<div class="abs">
-										<a href="images/content/post-2-3.jpg" class="lightbox zoom info"></a><a href="blog-single.html" class="link info"></a>
+										<a href="images/blog3.jpg" class="lightbox zoom info"></a><a href="blog-single.html" class="link info"></a>
 									</div>	
 								</div>
 							</div>	
 							<div class="blog-item-caption-container">
-										<a class="a-invert" href="blog-single.html" ><span class="bold">Lorem</span> Ipsum</a>
+										<a class="a-invert" href="blog-single.html" ><span class="bold">冬季大逃亡</span>---生死ddl活动记录</a>
 									<div class="lp-item-container-border clearfix">
 										<div class="blog-info-container">
 												<ul class="clearfix">
-													<li class="author">Admin</li>
+													<li class="author">artpark</li>
 													<li class="view">16 views</li>
 													<li class="comment">25 Comments</li>
-													<li class="tag">Website Design - Responsive</li>
+													<li class="tag">活动</li>
 												</ul>
 										</div>
 									</div>
 							</div>
 						</div>
 						<div class="blog-item-text-container">
-							<p>Luctus et ultrices posuere cubilia Curae. Donec nibh sapien, molestie quis elementum et, dignissim non ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sed mauris lorem. Sed sit amet mauris eu purus consectetur blandit sed et lacus. Cras tellus enim, sagittis a varius faucibus, molestie in dolor. Mauris mollis adipiscing elit, in vulputate est volutpat vitae. Donec nibh sapien, molestie quis elementum et, dignissim non ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec nibh sapien, molestie quis elementum et, dignissim non ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas...</p>
+							<p>
+							计划于:
+							      <p>本周三下午4:30~6:00，6:30~9:00。</p>
+
+							       <p>本周四下午6:30 ~9:30。</p>
+
+							       <p>下周一下午4:30~6:00,6:30~9:00。（酌情会小范围影响作业成绩）</p>
+
+							       <p>在 710 检查web大作业。</p>
+
+							    请大家相互转告。。。。</p>
 
 						</div>
 						<div class="lp-r-m-container right">
-							<a href="blog-single.html" class="button medium r-m-plus r-m-full">READ MORE</a>
+							<a href="index.php/BlogController/blogSingle/3" class="button medium r-m-plus r-m-full">READ MORE</a>
 						</div>
 	
 			</div>
@@ -284,7 +295,7 @@
 		<!-- WIDGET -->	
 			<div class="sidebar-item  m-bot-35">
 				<div class="caption-container-main m-bot-30">
-					<div class="caption-text-container">热门</div>
+					<div class="caption-text-container">我的好友</div>
 					<div class="content-container-white caption-bg "></div>
 				</div>
 
@@ -300,36 +311,16 @@
 						<div>
 							<div id="tab1" class="tab-content" >
 								<ul class="latest-post-container">
+								<?php foreach($myFriends as $item):?>
 									<li class="latest-post-sidebar clearfix">
 										<div class="lp-img-cont left">
-											<a href="" ><img src="images/content/port-2-3.jpg" alt="project"></a>
+											<a href="" ><img src="images/content/avatar-1.png" alt="project"></a>
 										</div>
 										<div class="lp-title-cont left">
-											<p class="latest-post-sidebar-title"><a href="">Lorem Ipsum</a></p>
-											<p class="latest-post-sidebar-date">Feb 15, 2016</p>
-											<p class="latest-post-sidebar-comm">15 comments</p>
+											<p class="latest-post-sidebar-title"><a href=""><?=$item['username']?></a></p>
 										</div>	
 									</li>
-									<li class="latest-post-sidebar clearfix">
-										<div class="lp-img-cont left">
-											<a href="" ><img src="images/content/port-2-2.jpg" alt="project"></a>
-										</div>
-										<div class="lp-title-cont left">
-											<p class="latest-post-sidebar-title"><a href="">Cras Tincid</a></p>
-											<p class="latest-post-sidebar-date">Feb 10, 2016</p>
-											<p class="latest-post-sidebar-comm">12 comments</p>
-										</div>	
-									</li>
-									<li class="latest-post-sidebar clearfix">
-										<div class="lp-img-cont left">
-											<a href="" ><img src="images/content/port-2-4.jpg" alt="project"></a>
-										</div>
-										<div class="lp-title-cont left">
-											<p class="latest-post-sidebar-title"><a href="">Amet Mauris</a></p>
-											<p class="latest-post-sidebar-date">Jan 14, 2016</p>
-											<p class="latest-post-sidebar-comm">10 comments</p>
-										</div>
-									</li>
+								<?php endforeach;?>
 								</ul>
 							</div>
 							<div id="tab2" class="tab-content content-container-white" >
@@ -344,7 +335,7 @@
 		<!-- WIDGET -->	
 			<div class="sidebar-item  m-bot-35">
 				<div class="caption-container-main m-bot-30">
-					<div class="caption-text-container">言论</div>
+					<div class="caption-text-container">好友动态</div>
 					<div class="content-container-white caption-bg "></div>
 				</div>
 				
@@ -353,57 +344,18 @@
 				<div>
 				
 					<div id="accordion">
-					
-						  <h3><a href="#">Lorem ipsum</a></h3>
+					<?php foreach($myFriends as $item):?>
+						  <h3><a href="#"><?=$item['username']?></a></h3>
 						  <div>
-							<p>Nunc ipsum risus, bibendum quis tincidunt a, tempor quis nunc. Aenean in odio in sapien porttitor sodales.</p>
+							<p>暂无</p>
 						  </div>
-						  
-						  <h3><a href="#">Vestilum pulvinar</a></h3>
-						  <div>
-							<p>Nunc ipsum risus, bibendum quis tincidunt a, tempor quis nunc. Aenean in odio in sapien porttitor sodales.</p>
-						  </div>
-						  
-						  <h3><a href="#">Donec sedin</a></h3>
-						  <div>
-						  <p>Nunc ipsum risus, bibendum quis tincidunt a, tempor quis nunc. Aenean in odio in sapien porttitor sodales.</p>
-						  </div> 
+						<?php endforeach;?>  
 					 
 					 </div><!-- End accordion -->
 					
 				</div>
 			</div>
-		<!-- WIDGET -->	
-			<div class="sidebar-item  m-bot-25">
-				<div class="caption-container-main m-bot-30">
-					<div class="caption-text-container">标签</div>
-					<div class="content-container-white caption-bg "></div>
-				</div>
-				
-				
-				<div>
-				
-						<div class="tag-cloud">
-							<ul class="clearfix">
-								<li><a href="">教程</a></li>
-								<li><a href="">激励</a></li>
-								<li><a href="">日记</a></li>
-								<li><a href="">northside</a></li>
-								<li><a href="">原创</a></li>
-								<li><a href="">新奇</a></li>
-							</ul>
-						</div>
-				</div>
-			</div>
-		<!-- WIDGET -->	
-			<div class="sidebar-item  m-bot-35">
-				<div class="caption-container-main m-bot-30">
-					<div class="caption-text-container">图片</div>
-					<div class="content-container-white caption-bg "></div>
-				</div>
-					<ul id="flickrfeed" class="clearfix"></ul>
-
-			</div>
+			
 		</div>
 	</div>
 <!-- FOOTER -->
@@ -484,11 +436,14 @@
 					<div class="footer-menu-container">
 						<nav class="clearfix" id="footer-nav">
 							<ul class="footer-menu">
-								<li><a href="index.html">首页</a></li>
-								<li><a href="statistic.html">运动</a></li>
-								<li><a href="activity.html">活动</a></li>
-								<li><a href="blog.html">社区</a></li>
-								<li><a href="contact.html">联系我们</a></li>
+								<li><a href="index.php/LoginController/index">首页</a>
+										</li>
+										<li><a href="index.php/StatisticController/userStatistic">运动</a>
+										</li>
+										<li ><a href="index.php/ActivityController/activity">活动</a>
+										</li>
+										<a href="index.php/BlogController/blog">社区</a>
+										<li ><a href="contact.html">联系我们</a></li>
 							</ul>
 						</nav>
 					</div>
